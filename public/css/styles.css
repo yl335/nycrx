@@ -15,6 +15,9 @@ a.btn {
 	border-radius: 15px;
 	padding: 5px 20px;
 }
+p > b {
+	color: #333;
+}
 
 body > div.navbar .navbar-inner {
 	background: none;
@@ -88,20 +91,21 @@ header > div.container > p {
 	font-size: 18px;
 }
 
-#history {
+div.dict {
 	padding: 60px 0;
-/*	background: #f4f4f4;
-	border-top: 1px solid #d4d4d4;
-	border-bottom: 1px solid #d4d4d4;*/
 }
-#history h4 {
+div.dict h4 {
 	text-align: right;
 }
-#history > h4 {
+div.dict > h4 {
 	text-align: center;
 }
-#history > div.row-fluid {
+div.dict > div.row-fluid {
 	margin: 20px 0;
+}
+
+#drug #background {
+	padding: 60px 0;
 }
 
 footer {
