@@ -32,7 +32,8 @@ body > div.navbar .nav > li > a {
 body > div.navbar h6 {
 	margin: 0;
 }
-body > div.navbar .nav > li.active > a {
+body > div.navbar .nav > li.active > a,
+body > div.navbar .nav > li.active > a:hover {
 	background: none;
 	box-shadow: none;
 	color: #333;
@@ -74,6 +75,9 @@ header > div.container > p {
 #overview section > h4 {
 	text-align: center;
 }
+#overview section > h4 + p {
+	margin-top: 0;
+}
 #overview section > table.table {
 	margin-top: 20px;
 }
@@ -94,6 +98,7 @@ header > div.container > p {
 div.dict {
 	padding: 60px 0;
 }
+div.dict h1,
 div.dict h4 {
 	text-align: right;
 }
@@ -106,6 +111,77 @@ div.dict > div.row-fluid {
 
 #drug #background {
 	padding: 60px 0;
+}
+
+#projects {
+	margin-bottom: 40px;
+}
+#projects section {
+	margin-top: 40px;
+	padding-right: 40px;
+}
+#projects h4 + p {
+	/*margin-top: -10px;*/
+	color: #333;
+}
+#projects p,
+#projects ul li {
+	color: #999;
+}
+
+#about .container h4 {
+	text-align: center;
+}
+#about .container p {
+	text-align: left;
+}
+#about .row-fluid {
+	margin-top: 20px;
+}
+#about h1 {
+	margin-bottom: 40px;
+}
+
+#team {
+	margin: 40px 0;
+}
+#team #sarah {
+	position: relative;
+}
+#team #sarah h1 {
+	margin-bottom: 0;
+}
+#team .icon-left {
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	margin-right: -100px;
+}
+#team .icon-sarah {
+	background: url("../images/sarah.jpeg") no-repeat center left;
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	float: left;
+	position: relative;
+}
+#team .icon-group {
+	font-size: 50px;
+	line-height: 80px;
+	text-align: center;
+	background: #333;
+	color: white;
+}
+#team .team-content {
+	float: left;
+	margin-left: 100px;
+}
+#team ul {
+	list-style: none;
+	margin-left: 0;
 }
 
 footer {
