@@ -8,6 +8,15 @@ h6 {
 [class^="icon-"], [class*=" icon-"] {
 	background: none;
 }
+h1 a > [class*=" icon-"], 
+h1 a > [class^="icon-"] {
+	line-height: 40px;
+	width: 40px;
+}
+h1 a > [class*=" icon-"]:hover, 
+h1 a > [class^="icon-"]:hover {
+	text-decoration: none;
+}
 a.btn {
 	box-shadow: none;
 	background: #333;
@@ -17,6 +26,9 @@ a.btn {
 }
 p > b {
 	color: #333;
+}
+.muted {
+	color: #666;
 }
 
 body > div.navbar .navbar-inner {
@@ -48,7 +60,7 @@ header {
 header > div.container {
 	text-align: center;
 }
-header > div.container > p {
+header > div.container > p.lead {
 	width: 640px;
 	margin: 10px auto 15px;
 }
@@ -115,18 +127,42 @@ div.dict > div.row-fluid {
 
 #projects {
 	margin-bottom: 40px;
-}
-#projects section {
 	margin-top: 40px;
 	padding-right: 40px;
+	text-align: center;
 }
 #projects h4 + p {
-	/*margin-top: -10px;*/
+	margin-top: -10px;
+	margin-bottom: 20px;
 	color: #333;
 }
 #projects p,
 #projects ul li {
 	color: #999;
+}
+#projects .divider {
+	margin-top: 0;
+	height: 1px;
+	min-height: 0;
+}
+#projects .row {
+	margin: 20px 0;
+}
+#project-content {
+	margin: 40px 0;
+}
+.project .row {
+	margin: 20px 0;
+}
+.project .row > .divider {
+	min-height: 0;
+	height: 0;
+}
+
+#project h1 a.disabled,
+#project h1 a.disabled:hover {
+	color: #d4d4d4;
+	cursor: text;
 }
 
 #about .container h4 {
@@ -182,6 +218,9 @@ div.dict > div.row-fluid {
 #team ul {
 	list-style: none;
 	margin-left: 0;
+}
+#funders {
+	margin-top: 30px;
 }
 
 footer {
