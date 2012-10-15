@@ -14,8 +14,24 @@ h1 a > [class^="icon-"] {
 	width: 40px;
 }
 h1 a > [class*=" icon-"]:hover, 
-h1 a > [class^="icon-"]:hover {
+h1 a > [class^="icon-"]:hover,
+h4 a > [class*=" icon-"]:hover, 
+h4 a > [class^="icon-"]:hover {
 	text-decoration: none;
+}
+h4 a > [class*=" icon-"], 
+h4 a > [class^="icon-"] {
+	line-height: 20px;
+	width: 20px;
+}
+[class^="icon-"] + span {
+	margin-left: 5px;
+}
+
+blockquote p {
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: normal;
 }
 a.btn {
 	box-shadow: none;
@@ -23,6 +39,7 @@ a.btn {
 	color: white;
 	border-radius: 15px;
 	padding: 5px 20px;
+	text-shadow: none;
 }
 p > b {
 	color: #333;
@@ -31,6 +48,10 @@ p > b {
 	color: #666;
 }
 
+body > div.navbar-fixed-top {
+	background: white;
+	box-shadow: 0px 0px 5px 0px #D4D4D4;
+}
 body > div.navbar .navbar-inner {
 	background: none;
 	box-shadow: none;
@@ -65,17 +86,14 @@ header > div.container > p.lead {
 	margin: 10px auto 15px;
 }
 
-#overview {
-	padding: 20px 0;
-}
 #overview section {
 	padding: 40px 0 0;
 }
-#overview section > i[class^="icon-"] {
+#overview section i[class^="icon-"] {
 	text-align: center;
 	font-size: 32px;
 	color: white;
-	background: #333;
+	background: #08C;
 	padding: 10px;
 	height: 40px;
 	width: 40px;
@@ -84,10 +102,17 @@ header > div.container > p.lead {
 	display: block;
 	margin: 0 auto 20px;
 }
-#overview section > h4 {
+#overview section > a {
+	display: block;
+}
+#overview section > a:hover i[class^="icon-"] {
+	text-decoration: none;
+	background: #005580;
+}
+#overview section h4 {
 	text-align: center;
 }
-#overview section > h4 + p {
+#overview section h4 + p {
 	margin-top: 0;
 }
 #overview section > table.table {
@@ -121,33 +146,57 @@ div.dict > div.row-fluid {
 	margin: 20px 0;
 }
 
-#drug #background {
-	padding: 60px 0;
-}
-
-#projects {
+.nav-item {
 	margin-bottom: 40px;
 	margin-top: 40px;
 	padding-right: 40px;
-	text-align: center;
+	text-align: center;	
 }
-#projects h4 + p {
+.nav-item h4 + p {
 	margin-top: -10px;
 	margin-bottom: 20px;
-	color: #333;
+	color: #666;
 }
-#projects p,
-#projects ul li {
-	color: #999;
-}
-#projects .divider {
+.nav-item .row .divider {
 	margin-top: 0;
 	height: 1px;
 	min-height: 0;
 }
-#projects .row {
+.nav-item .row {
 	margin: 20px 0;
 }
+
+.nav-pills-minimal {
+	margin-bottom: 0;
+	text-align: center;
+}
+.nav-pills-minimal > li {
+	float: none;
+	display: inline-block;
+}
+.nav-pills-minimal > li a:hover {
+	background: none;
+	border-bottom: 3px solid #005580;
+	border-radius: 0;
+}
+.nav-pills-minimal > li.active a,
+.nav-pills-minimal > li.active a:hover {
+	background: none;
+	color: #333;
+	border-bottom: 3px solid #333;
+	border-radius: 0;
+}
+
+.pager-minimal a.disabled,
+.pager-minimal a.disabled:hover {
+	color: #d4d4d4;
+	cursor: text;
+}
+
+#drug #background {
+	padding: 60px 0;
+}
+
 #project-content {
 	margin: 40px 0;
 }
@@ -159,10 +208,25 @@ div.dict > div.row-fluid {
 	height: 0;
 }
 
-#project h1 a.disabled,
-#project h1 a.disabled:hover {
-	color: #d4d4d4;
-	cursor: text;
+#case-pagination {
+	border-bottom: 1px solid #d4d4d4;
+}
+#case-content {
+	margin: 40px 0;
+}
+#case-content .row .divider {
+	min-height: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#case-content h5 {
+	text-align: center;
+}
+
+#partners h4 {
+	background: #f4f4f4;
+	padding: 10px;
+	border-bottom: 1px solid #d4d4d4;
 }
 
 #about .container h4 {
@@ -204,7 +268,8 @@ div.dict > div.row-fluid {
 	float: left;
 	position: relative;
 }
-#team .icon-group {
+#team .icon-group,
+#team .icon-file {
 	font-size: 50px;
 	line-height: 80px;
 	text-align: center;
@@ -219,8 +284,62 @@ div.dict > div.row-fluid {
 	list-style: none;
 	margin-left: 0;
 }
-#funders {
+#funders,
+#tax {
 	margin-top: 30px;
+}
+
+#prescription .affix {
+	top: 40px;
+	width: 220px;
+}
+#prescription .sidebar ul {
+	margin: 40px 0;
+	padding: 0;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+	background: white;
+}
+#prescription .sidebar .icon-chevron-right {
+	float: right;
+	margin-top: 2px;
+	margin-right: -6px;
+	color: #d4d4d4;
+	background-image: none;
+}
+#prescription .sidebar li > a {
+	display: block;
+	margin: 0 0 -1px;
+	padding: 8px 14px;
+	border: 1px solid #d4d4d4;
+}
+#prescription .sidebar li:first-child > a {
+	border-radius: 6px 6px 0 0;
+}
+#prescription .sidebar li:last-child > a {
+	border-radius: 0 0 6px 6px;
+}
+#prescription .sidebar .active > a {
+	position: relative;
+	z-index: 2;
+	padding: 9 15px;
+	border: 0;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: inset 1px 0 0 rgba(0,0,0,0.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+#prescription .sidebar li:hover i {
+	color: #666;
+}
+#prescription .sidebar .active:hover i {
+	color: #d4d4d4;
+}
+#prescription section {
+	padding: 20px 0;
+}
+#prescription .page-header {
+	margin: 0 0 40px;
 }
 
 footer {

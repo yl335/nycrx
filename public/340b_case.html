@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/font-awesome.css"/>
+		<link rel="stylesheet" href="css/styles.css"/>		
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>	
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body id="case">
+		<div class="navbar navbar-static-top navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="index.html">NYCRx</a>
+					<ul class="nav">
+						<li><a href="index.html"><h6>Home</h6></a></li>
+						<li class="active"><a href="#"><h6>340B</h6></a></li>
+						<li><a href="card.html"><h6>Discount Prescription</h6></a></li>
+						<li><a href="research.html"><h6>Research</h6></a></li>
+						<li><a href="about.html"><h6>About</h6></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<header>
+			<div class="container">
+				<h1>Get the Most out of 340B at Every Step of the Way</h1>
+				<ul class="nav nav-pills nav-pills-minimal">
+					<li><a href="340b.html">Overview</a></li>
+					<Li><a href="340b_partners.html">Partners</a></li>
+					<li class="active"><a href="340b_cases.html">Case Studies</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div id="case-content" class="row-fluid">
+			<div class="container">
+				<section class="span6 offset3">
+					<div style="text-align:center">
+						<h4 class="pager-minimal">
+							<a class="case-prev prev" href="#"><i class="icon-chevron-left"></i></a>
+							<span class="betances case-title">Betances Health Center</span>
+							<span class="callen case-title">Callen-Lorde Community Health Center</span>
+							<span class="helen case-title">Helen B. Atkinson Health Center</span>					
+							<a class="case-next next" href="#"><i class="icon-chevron-right"></i></a>
+						</h4>
+						<a href="340b_cases.html"><i class="icon-list-ul"></i><span>All Case Studies</span></a>
+					</div>
+					<div class="row"><div class="divider span4 offset4"></div></div>
+					<h5>The Health Center</h5>
+					<p class="muted">A short paragraph detailing basic background information about this health center. Example: Alegent Health is a multi-hospital healthcare system based in Omaha, Nebraska that serves thousands of residents across two states. Two of Alegent’s hospitals are Disproportionate Share Hospitals (DSH) that qualify for reduced drug pricing through the 340B program.</p>
+					<div class="row"><div class="divider span4 offset4"></div></div>
+					<h5>Before NYCRx</h5>
+					<p class="muted">Explain the challenges this health center faced. Why it didn't use 340B? Did other 340B solutions not work? Why? What are the requirements and needs this health center has that were met? Example: Alegent was using another software program to manage their replenishment process with the 340B program. The software in place, however, wasn’t capturing all available savings opportunities, and the system was “cumbersome” to use, said Alegent Director of Pharmacy, Mike Tiesi.</p>
+					<p class="muted">In order to maximize savings, Alegent needed a product that could successfully track all dispensations throughout a patient’s stay. This capability would capture the transition from outpatient to inpatient status, specifically for patients who first received medical care and drug dispensations in the emergency room before later being admitted to the hospital.</p>
+					<div class="row"><div class="divider span4 offset4"></div></div>
+					<h5>After NYCRx</h5>
+					<p class="muted">Top benefits of using NYCRx. Example: Alegent’s relationship with Sentry has reaped a myriad of benefits for the healthcare system. In addition to financial gain, Sentinel RCM has provided Alegent with a much-needed tool: simple auditing capabilities. Tiesi said he was extremely pleased with the straightforward way Sentry allowed him to respond to an audit and valued the time it saved him: ”It would’ve taken me at least 40 hours of my time looking through the data before with the previous vendor.”</p>
+					<p class="muted">The return on investment of switching to Sentry has exceeded what Alegent was expecting, Tiesi said, including both increased savings and the performance factors such as simple ordering, auditing compliance, and ongoing support and teamwork from Sentry.</p>
+					<p class="muted">“You need someone that isn’t just selling a product,” he said. “They’re a partner. They’re here to help you when things are tough and they’re here to enjoy the successes with you too. And this has been successful.”</p>
+				</section>
+			</div>
+		</div>
+
+		<footer class="row-fluid">
+			<div class="container">
+				<div class="span2">
+					<h5>NYCRx</h5>
+					<a href="index.html">Home</a><br/>
+					<a href="about.html">About</a>
+				</div>
+				<div class="span3">
+					<h5>Projects</h5>
+					<a href="340b.html">340B</a><br/>
+					<a href="card.html">Discount Prescription Card</a><br/>
+					<a href="research.html">Research Projects</a>
+				</div>
+				<div class="span4">
+					<i class="icon-map-marker"></i>
+					<address>
+							<strong>NYCRx</strong><br/>
+							2090 Adam Clayton Powell Blvd. 5th Fl.,<br/> 
+							New York, NY 10027
+					</address>
+				</div>	
+				<div class="span3">
+					<i class="icon-envelope-alt"></i> nycrx@gmail.com<br/>
+					<i class="icon-phone"></i> 212-676-2152
+				</div>	
+			</div>
+		</footer>
+	</body>
+</html>
+
+<script type="text/javascript">
+var projects = ["betances", "callen", "helen"];
+
+function getParameterByName(name) {
+  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+  var regexS = "[\\?&]" + name + "=([^&#]*)";
+  var regex = new RegExp(regexS);
+  var results = regex.exec(window.location.search);
+  if(results == null)
+    return "";
+  else
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+function clear() {
+	$(".case-title").hide();
+}
+
+$(function() {
+	if (getParameterByName("case")) {
+		var project = getParameterByName("case");
+		if ((projects.indexOf(project)+1) == projects.length) {
+			$(".next").addClass("disabled");
+		}
+		if (projects.indexOf(project) == 0) {
+			$(".prev").addClass("disabled");
+		}
+
+		clear();
+		$("."+project).show();
+	}
+	else {
+		clear();
+		$(".betances").show();
+		$(".prev").addClass("disabled");
+	}
+
+	$(".next").click(function() {
+		var project = getParameterByName("case");
+		var URL = "340b_case.html?case=";
+		if (project) {
+			var index = projects.indexOf(project) + 1;
+			if (index && index < projects.length ) {
+				window.location = URL + projects[index];
+			}
+			else if (!index) {
+				window.location = URL + projects[0];
+			}
+		}
+		else {
+			window.location = URL + projects[1];
+		}
+	})
+
+	$(".prev").click(function() {
+		var project = getParameterByName("case");
+		var URL = "340b_case.html?case=";
+		if (project) {
+			var index = projects.indexOf(project);
+			if (index && index < projects.length ) {
+				window.location = URL + projects[index-1];
+			}
+			else if (!index) {
+				window.location = URL + projects[0];
+			}
+		}
+		else {
+			window.location = URL + projects[0];
+		}
+	})
+})
+</script>

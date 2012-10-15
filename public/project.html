@@ -11,7 +11,7 @@
 	</head>
 	
 	<body id="project">
-		<div class="navbar navbar-static-top">
+		<div class="navbar navbar-static-top navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<a class="brand" href="index.html">NYCRx</a>
@@ -28,15 +28,15 @@
 
 		<header>
 			<div class="container">
-				<h1>
-					<a class="project-prev" href="#"><i class="icon-chevron-left"></i></a>
+				<h1 class="pager-minimal">
+					<a class="project-prev prev" href="#"><i class="icon-chevron-left"></i></a>
 					<span class="project-title reproductive">SBHC Reproductive Health</span>
 					<span class="project-title differential">Differential Drug Pricing in NYC</span>
 					<span class="project-title adherence">Medication Adherence in Patients with Type II Diabetes</span>
 					<span class="project-title carvein">New York State Medicaid “Carve-in” Study</span>
-					<a class="project-next" href="#"><i class="icon-chevron-right"></i></a>
+					<a class="project-next next" href="#"><i class="icon-chevron-right"></i></a>
 				</h1>
-				<p><a href="research.html"><i class="icon-list-ul"></i> See All Research Projects</a></p>
+				<p><a href="research.html"><i class="icon-list-ul"></i><span>All Research Projects</span></a></p>
 			</div>
 		</header>
 
@@ -92,7 +92,7 @@
 					<h5>Projects</h5>
 					<a href="340b.html">340B</a><br/>
 					<a href="card.html">Discount Prescription Card</a><br/>
-					<a href="#">Research Projects</a>
+					<a href="research.html">Research Projects</a>
 				</div>
 				<div class="span4">
 					<i class="icon-map-marker"></i>
@@ -150,7 +150,7 @@ $(function() {
 		$(".project-prev").addClass("disabled");
 	}
 
-	$(".project-next").click(function() {
+	$(".next").click(function() {
 		var project = getParameterByName("project");
 		var URL = "project.html?project=";
 		if (project) {
@@ -167,7 +167,7 @@ $(function() {
 		}
 	})
 
-	$(".project-prev").click(function() {
+	$(".prev").click(function() {
 		var project = getParameterByName("project");
 		var URL = "project.html?project=";
 		if (project) {

@@ -11,7 +11,7 @@
 	</head>
 	
 	<body>
-		<div class="navbar navbar-static-top">
+		<div class="navbar navbar-static-top navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<a class="brand" href="#">NYCRx</a>
@@ -36,26 +36,30 @@
 		<div id="overview" class="row-fluid">
 			<div class="container">
 				<section class="span4">
-					<i class="icon-money"></i>
-					<h4>Maximizing 340B Savings</h4>
+					<a class="" href="340b.html">
+						<i class="icon-money"></i>
+						<h4>Maximizing 340B Savings</h4>
+					</a>
 					<p class="muted">NYCRx works with 340B entities to maximize both their revenue and the savings to their patients.</p>
 					<table class="table table-hover">
 						<tbody>
 							<tr>
-								<td><a href="#">Partnering with <b>34</b> Health Centers</a></td>
+								<td><a href="340b_partners.html">Partnering with <b>34</b> Health Centers</a></td>
 							</tr>
 							<tr>
-								<td><a href="#">Used on <b>238,000</b> Prescriptions</a></td>
+								<td><a href="340b.html#compliance">Used on <b>238,000</b> Prescriptions</a></td>
 							</tr>
 							<tr>
-								<td><a href="#">Over <b>$2,500,000</b> Saved</a></td>
+								<td><a href="340b.html#savings">Over <b>$2,500,000</b> Saved</a></td>
 							</tr>
 						</tbody>
 					</table>
 				</section>
 				<section class="span4">
-					<i class="icon-credit-card"></i>
-					<h4>Direct Patient Benefits</h4>
+					<a href="card.html">
+						<i class="icon-credit-card"></i>
+						<h4>Direct Patient Benefits</h4>
+					</a>
 					<p class="muted">NYCRx offers a free prescription discount card that works at over 90% of pharmacies nation-wide and offers up to 65% off on prescriptions.</p>
 					<table class="table table-hover">
 						<tbody>
@@ -72,8 +76,10 @@
 					</table>
 				</section>
 				<section class="span4">
-					<i class="icon-book"></i>
-					<h4>Collaborative Research</h4>
+					<a href="research.html">
+						<i class="icon-book"></i>
+						<h4>Collaborative Research</h4>
+					</a>
 					<p class="muted">NYCRx collaborates with universities and local government to further recognition of the importance of prescription access.</p>
 					<table class="table table-hover">
 						<tbody>
@@ -111,7 +117,7 @@
 					<div class="span4">
 						<h4>Since Then</h4>
 					</div>
-					<p class="span6 muted">NYCRx now covers <b>NY, NJ and Connecticut</b>. <br/>Our mission has expanded to offer <a>discount prescription cards</a> and conduct in-depth <a>researches</a> into prescription access issues.</p>
+					<p class="span6 muted">NYCRx now covers <b>NY, NJ and Connecticut</b>. <br/>Our mission has expanded to offer <a href="card.html">discount prescription cards</a> and conduct in-depth <a href="research.html">research</a> into prescription access issues.</p>
 				</div>
 			</div>
 			<a href="about.html" class="btn" style="display:block; width: 100px; margin: 0 auto">About NYCRx</a>
@@ -120,7 +126,7 @@
 			<div class="container">
 				<div class="span2">
 					<h5>NYCRx</h5>
-					<a href="#">Home</a><br/>
+					<a href="index.html">Home</a><br/>
 					<a href="about.html">About</a>
 				</div>
 				<div class="span3">
@@ -145,3 +151,11 @@
 		</footer>
 	</body>
 </html>
+
+<script type="text/javascript">
+$(function() {
+	$("#overview h4 a").on("mousedown", function() {
+		$(this).parents("h4").siblings("i").
+	})
+})
+</script>

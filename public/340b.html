@@ -7,11 +7,11 @@
 		<link rel="stylesheet" href="css/styles.css"/>		
 
 		<script src="http://code.jquery.com/jquery-latest.js"></script>	
-		<script src="js/bootstrap.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
 	</head>
 	
-	<body id="drug">
-		<div class="navbar navbar-static-top">
+	<body id="prescription" data-spy="scroll" data-target=".sidebar">
+		<div class="navbar navbar-static-top navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<a class="brand" href="index.html">NYCRx</a>
@@ -19,7 +19,7 @@
 						<li><a href="index.html"><h6>Home</h6></a></li>
 						<li class="active"><a href="#"><h6>340B</h6></a></li>
 						<li><a href="card.html"><h6>Discount Prescription</h6></a></li>
-						<li><a href="research.html"><h6>Research Projects</h6></a></li>
+						<li><a href="research.html"><h6>Research</h6></a></li>
 						<li><a href="about.html"><h6>About</h6></a></li>
 					</ul>
 				</div>
@@ -29,44 +29,142 @@
 		<header>
 			<div class="container">
 				<h1>Get the Most out of 340B at Every Step of the Way</h1>
+				<ul class="nav nav-pills nav-pills-minimal">
+					<li class="active"><a href="#">Overview</a></li>
+					<Li><a href="340b_partners.html">Partners</a></li>
+					<li><a href="340b_cases.html">Case Studies</a></li>
+				</ul>
 			</div>
 		</header>
 
-		<div id="background" class="row-fluid">
-			<div class="container">
-				<div class="span4">
-					<p class="muted"><b>Medical costs increased by 6.9% between 2009 and 2010*.</b> In 2010, 629,000 people in New York reported being unable to get needed medical care. In the same year, 1,028,000 people reported being uninsured.<br/>(Source: DOH Epi Query 2010)</p>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span3 sidebar">
+					<ul class="nav nav-list">
+						<li>
+							<a href="#overview">
+								<i class="icon-chevron-right"></i> What is 340B
+							</a>
+						</li>
+						<li>
+							<a href="#savings">
+								<i class="icon-chevron-right"></i> Savings & Costs
+							</a>
+						</li>
+						<li>
+							<a href="#compliance">
+								<i class="icon-chevron-right"></i> Designed for Compliance
+							</a>
+						</li>
+						<li>
+							<a href="#implementation">
+								<i class="icon-chevron-right"></i> Tailored Implementation
+							</a>
+						</li>
+						<li>
+							<a href="#geography">
+								<i class="icon-chevron-right"></i> Geography Coverage
+							</a>
+						</li>
+					</ul>
 				</div>
-				<div class="span4">
-					<p class="muted"><b><a href="#">340B Drug Pricing Program</a> was created by <abbr title="Health Resources and Services Administration">HRSA</abbr> and <abbr title="Office of Pharmacy Affairs ">OFA</abbr></b> to offer meaningful savings to patients on their medications (average 50% off), and to generate significant revenue to the safety net providers (entities). 340B is available to all <abbr title="Federally Qualified Health Center">FQHCs</abbr>, <abbr title="Disproportionate Share Hospital">DSH Hospitals</abbr>, FQHC look-alikes as well as several other types of providers. <br/><a href="http://www.hrsa.gov/opa/introduction.htm">Check if your organization is eligible.</a></p>
-				</div>
-				<div class="span4">
-					<p class="muted"><b>However, the 340B program is currently severely underutilized.</b> Many safety net providers eligible for 340B aren't taking advantage of the program. Some of the reasons for not pursuing the 340B opportunity are the lack of outpatient pharmacy relationship, and perceived complexity of the program.</p>
-				</div>
-			</div>
-			<div class="container divider" style="width:600px;margin: 40px auto 20px;border-width:5px"></div>
-			<div class="container" style="text-align:center">
-				<div class="span8 offset2">
-					<h4>This is Why NYCRx was Created</h4>
-					<p class="muted">From selecting partnering pharmacies, contracting, handling of all Federal paperwork, to ongoing management of 340B transactions, reporting, and auditing once the program is live.
+				<div class="span9 340b-content">
+					<section id="overview">
+						<div class="page-header">
+							<h1>What is 340B</h1>
+						</div>
+
+						<p class="muted"><b>Medical costs increased by 6.9% between 2009 and 2010*.</b><br/> In 2010, 629,000 people in New York reported being unable to get needed medical care. In the same year, 1,028,000 people reported being uninsured.<br/>(Source: DOH Epi Query 2010)</p>
+						<p class="muted"><b>In response, <a href="#">340B Drug Pricing Program</a> was created by <abbr title="Health Resources and Services Administration">HRSA</abbr> and <abbr title="Office of Pharmacy Affairs ">OFA</abbr></b>.<br/>It offers meaningful savings to patients on their medications (average 50% off), and to generate significant revenue to the safety net providers (entities). 340B is available to all <abbr title="Federally Qualified Health Center">FQHCs</abbr>, <abbr title="Disproportionate Share Hospital">DSH Hospitals</abbr>, FQHC look-alikes as well as several other types of providers. <br/><a href="http://www.hrsa.gov/opa/introduction.htm">Check if your organization is eligible.</a></p>
+						<p class="muted"><b>However, the 340B program is currently severely underutilized.</b><br/> Many safety net providers eligible for 340B aren't taking advantage of the program. Some of the reasons for not pursuing the 340B opportunity are the lack of outpatient pharmacy relationship, and perceived complexity of the program.</p>
+
+						<div class="well">
+							<h5>This is Why NYCRx was Created</h5>
+							<p class="muted">From selecting partnering pharmacies, contracting, handling of all Federal paperwork, to ongoing management of 340B transactions, reporting, and auditing once the program is live.</p>
+						</div>
+					</section>
+					<section id="savings">
+						<div class="page-header">
+							<h1>Savings & Costs</h1>
+						</div>
+
+						<p class="muted"><b>340B Savings</b><br/>Using 340B, prescription medicine savings average about 50% off retail. A patient can expect to save the difference between retail and 340B, less fees (pharmacies collect a per prescription dispensing fee to cover their costs). </p>
+						<div class="well">
+							<h5>Savings = Retail cost - 340B cost - fees</h5>
+							<h5>Revenue = Total Collections (Copay + Commerical Reimbursement) - 340B Cost - Fees</h5>
+						</div>
+						<p class="muted">For a retail drug that costs $100, with 340B it will cost about $50, with $10 of fees, the final savings for will be $40. As these savings become very meaningful over time. Your organization will be able to:</p>
+						<ul class="muted">
+							<Li>Allow more under-served patients to afford prescription medicine</li>
+							<li>Bring in more revenue to your organization, thus ensuring better services and care</li>
+						</ul>
+						<p class="muted"><b>Service Cost</b><br/>NYCRx offers assistance with implementation at no charge. We charge a small per prescription (by every month, by volume of prescriptions) fee if a site chooses to have us manage the 340B program on an ongoing basis. And as mentioned above pharmacies require a dispensing fee. As NYCRx is a non-profit organization, driven by its core mission to increase accessiblity to prescription medicine, our goal is not to drive revenue, but to expand the use of 340B.</b></p>
+						<p class="muted">Other startup fees can include</p>
+						<ul class="muted">
+							<li>Entity legal review of contracts</li>
+							<li>Entity staff time for meetings</li>
+							<li>Additional marketing</li>
+						</ul>
+						<blockquote class="well">
+							<h4><b>Over $2,500,000 Saved!</b></h4>
+							<small>Savings from utilizing the 340B program with NYCRx</small>
+						</blockquote>
+					</section>
+					<section id="compliance">
+						<div class="page-header">
+							<h1>Designed for Compliance</h1>
+						</div>
+						<p class="muted"><b rel="tooltip" title="From Sentry Data Systems">Fully HIPPA Compliant</b><br/>NYCRx's solutions are hosted through a SSAE16 certified infrastructure that is fully HIPAA compliant. NYCRX's secure, web-delivered applications make the process of deploying our 340B compliance solutions simple and quick, requiring no IT footprint in the hospital or pharmacy.</p>
+						<p class="muted"><b rel="tooltip" title="From Sentry Data Systems">Ready for Auditing Anytime</b><br/>Since inception, we passed federal audits with flying colors. With many years of experience working in the federal agency, we know exactly what needs to be captured for compliance and auditing. NYCRX's solutions capture all orders initiated both inside and outside the system using a capture process that's fully integrated with your purchasing and prescription inventory system. This is essential in being able to account for all purchases and utilizations.</p>
+						<p class="muted"><b>Secure Reporting</b><br/>NYCRx offers secure online reporting and inventory management. Our extensive reporting offers comprehensive information to facilitate compliance. Our sites and their partnering pharmacies know to the pill exactly what has been dispensed, ordered, and replenished. The repots cover detail such as 340B pricing, NDC, total collections, net revenue. </p>
+						<blockquote class="well">
+							<p>"Some quote or objective scoringthat validates the exemplar auditing and compliance history. Vestibulum quis neque at est gravida ultricies."</p>
+							<small>Wendy Stark, Executive Director from <a title="Callen-Lorde Community Health Center">Callen-Lorde Community Health Center</a></small>
+						</blockquote>
+					</section>
+					<section id="implementation">
+						<div class="page-header">
+							<h1>Tailored Implementation</h1>
+						</div>
+						<p class="muted">Every health center and hospital works differently and has different needs. With many years of experience in federal health agencies and 340B services, NYCRx work with each partner to tailor develop a program that works for you.</p>
+						<p class="muted"><b>Pharmacy Selection</b><br/>We work with your staff to identify the best local pharmacy partners for your clinic. We help either formalize an existing relationship or release an RFP to assist in the selection of a new partner.</p>
+						<p class="muted"><b>Negotiation of Contracts and Terms</b><br/>NYCRx has been helping eligible entities negotiate their contracted retail pharmacy agreements for over 5 years. We have draft contracts for entities to use at no charge, and we experience structuring agreements to fit many different configurations.</p>
+						<p class="muted"><b>Federal Office of Pharmacy Affairs 340B Paperwork</b><br/>After the contracts have been negotiated, NYCRx will help the entity stay on track with:</p>
+						<ul class="muted">
+							<li>All the necessary Federal OPA paperwork</li>
+							<li>Wholesaler paperwork</li>
+							<li>Health Information Number setup</li>
+							<li>NYCRx reporting setup</li>
+						</ul>
+						<p class="muted">Once all of the above accounts are established, NYCRx’s technology team will configure our systems to monitor all prescription traffic and all wholesaler transactions so our reports can reflect both dispensing data and inventory control.</p>
+						<p class="muted"><b>Launch</b><br/>Once our systems are in place to allow complete compliance, we are ready to go live. Someone from NYCRx will be available for a kick off meeting with staff and providers, and will bring marketing materials to drive traffic and ensure maximum capture.</p>
+						<p class="muted"><b>Implementation Duration</b><br/>There are quarterly submission and processing windows at the Office of Pharmacy affairs. And the process generally takes at least 90 days. For example adding a new site or adding a new pharmacy relationship to the Federal OPA’s website has an Oct 1-Oct15 deadline for recognition on Jan 1. So depending on when you begin in relation to the deadline, the process can take quite a while.</p>
+					</section>
+					<section id="geography">
+						<div class="page-header">
+							<h1>Geography Coverage</h1>
+						</div>
+						<p class="muted"><b>Rapidly Expanding Services</b><br/>Since NYCRx was launched by the New York City Department of Health and Mental Hygiene, we initially focused on New York, but we are expanding geographically and will work with any eligible sites nationally. NYCRx now covers NY, NJ and Connecticut.</p>
+						<blockquote class="well">
+							<h4><b>Partnering with 34 Health Centers & more than 40 Pharmacies</b></h4>
+						</blockquote>
+					</section>
 				</div>
 			</div>
 		</div>
-
-		<div class="container divider"></div>
 
 		<footer class="row-fluid">
 			<div class="container">
 				<div class="span2">
 					<h5>NYCRx</h5>
-					<a href="#">Home</a><br/>
-					<a href="#">About</a>
+					<a href="index.html">Home</a><br/>
+					<a href="about.html">About</a>
 				</div>
 				<div class="span3">
 					<h5>Projects</h5>
-					<a href="#">340B</a><br/>
-					<a href="#">Discount Prescription Card</a><br/>
-					<a href="#">Research Projects</a>
+					<a href="340b.html">340B</a><br/>
+					<a href="card.html">Discount Prescription Card</a><br/>
+					<a href="research.html">Research Projects</a>
 				</div>
 				<div class="span4">
 					<i class="icon-map-marker"></i>
@@ -84,3 +182,17 @@
 		</footer>
 	</body>
 </html>
+
+<script type="text/javascript">
+$(function() {
+	var $window = $(window);
+    $('.sidebar ul').affix({
+      offset: {
+        top: function () { return $window.width() <= 980 ? 290 : 210 }
+      , bottom: 270
+      }
+    })
+
+    $("b").tooltip();
+})
+</script>
