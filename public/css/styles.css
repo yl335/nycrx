@@ -1,10 +1,31 @@
+dt {
+	width: 150px;
+	background: white;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: normal;
+}
+dt:after { 
+	content: " .................................................................................." 
+}
+dd {
+	margin-left: 160px;
+	display: block;
+}
+
 h6 {
 	text-transform: uppercase;
 	font-weight: normal;
 }
+
 .divider {
 	border-bottom: 1px solid #d4d4d4;
 }
+.clear {
+	clear: both;
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	background: none;
 }
@@ -260,6 +281,13 @@ div.dict > div.row-fluid {
 	position: relative;
 	margin-right: -100px;
 }
+#team [class^="icon-"] {
+	font-size: 50px;
+	line-height: 80px;
+	text-align: center;
+	background: #333;
+	color: white;
+}
 #team .icon-sarah {
 	background: url("../images/sarah.jpeg") no-repeat center left;
 	width: 80px;
@@ -267,14 +295,6 @@ div.dict > div.row-fluid {
 	border-radius: 80px;
 	float: left;
 	position: relative;
-}
-#team .icon-group,
-#team .icon-file {
-	font-size: 50px;
-	line-height: 80px;
-	text-align: center;
-	background: #333;
-	color: white;
 }
 #team .team-content {
 	float: left;
@@ -284,6 +304,7 @@ div.dict > div.row-fluid {
 	list-style: none;
 	margin-left: 0;
 }
+#directors,
 #funders,
 #tax {
 	margin-top: 30px;
@@ -338,8 +359,60 @@ div.dict > div.row-fluid {
 #prescription section {
 	padding: 20px 0;
 }
+#prescription section:first-child {
+	padding-top: 40px;
+}
 #prescription .page-header {
 	margin: 0 0 40px;
+}
+
+#card-content {
+	margin: 40px 0;
+}
+#card-front {
+	border: 3px solid #d4d4d4;
+	border-radius: 4px;
+	background: #f4f4f4;
+}
+#card-front .card-header {
+	padding: 10px 20px;
+	border-bottom: 1px solid #d4d4d4;
+	font-weight: bold;
+	background: white;
+}
+#card-front .card-header-logo {
+	font-weight: bold;
+}
+#card-front .card-header-title {
+	float: right;
+}
+#card-front dl {
+	padding: 40px 60px;
+	margin: 0;
+	color: #666;
+}
+#card-front dt {
+	background: transparent;
+}
+#card-actions {
+	margin-top: 10px;
+	list-style: none;
+}
+#card-actions li {
+	float: none;
+}
+
+ul.checklist {
+	list-style: none;
+	margin-left: 0;
+}
+ul.checklist i {
+	margin-right: 5px;
+	margin-top: 4px;
+	float: left;
+}
+ul.checklist .checklist-item {
+	margin-left: 30px;
 }
 
 footer {

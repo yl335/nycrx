@@ -11,26 +11,91 @@
 	</head>
 	
 	<body>
-		<div class="navbar navbar-static-top">
+		<div class="navbar navbar-static-top navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="brand" href="index.html">NYCRx</a>
+					<a class="brand" href="#">NYCRx</a>
 					<ul class="nav">
 						<li><a href="index.html"><h6>Home</h6></a></li>
 						<li><a href="340b.html"><h6>340B</h6></a></li>
-						<li><a href="#"><h6>Discount Prescription</h6></a></li>
+						<li class="active"><a href="#"><h6>Discount Prescription</h6></a></li>
 						<li><a href="research.html"><h6>Research</h6></a></li>
-						<li class="active"><a href="#"><h6>About</h6></a></li>
+						<li><a href="about.html"><h6>About</h6></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<header id="">
-			<h1>Making Medicine Accessible</h1>
+		<header>
+			<div class="container">
+				<h1>Prescription Discount Card</h1>
+			</div>
 		</header>
 
-		<div id="" class="row-fluid">
+		<div id="card-content" class="row-fluid">
+			<div class="container">
+				<div class="row-fluid">
+					<div id="card-front" class="span6 offset3">
+						<div class="card-header">
+							<span class="card-header-logo">NYCRx</span>
+							<span class="card-header-title">Free Discount Prescription</span>
+						</div>
+						<dl>
+							<dt>Name</dt>
+							<dd>[Patient's Name]</dd>
+							<dt>Member ID</dt>
+							<dd>[Automatically Generated]</dd>
+							<dt>Bin</dt>
+							<dd>008878</dd>
+							<dt>Group</dt>
+							<dd>NYCRx</dd>
+							<dt>Coverage</dt>
+							<dd>Individual & Family<br/><small>This plan is not insurance.</small></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<ul class="offset3" id="card-actions">
+						<li>
+							<a href="#"><i class="icon-download-alt"></i><span>Download</span></a>  and print as many as you need
+						</li>
+						<li><i class="icon-envelope-alt"></i><span>Email <a href="mailto:someone@example.com?Subject=Prescription Discount Card">cards@nycrx.org</a></span></li>
+						<li><i class="icon-phone"></i><span>Call 212-676-2152</span></li>
+						<li><i class="icon-comment"></i><span>Text 57682 and the card codes will be sent to you via text</span></li>
+					</ul>
+				</div>
+				<div class="row-fluid">
+					<div class="offset3 span6">
+						<h4 style="margin-top:40px;margin-bottom:20px;text-align:center">Benefits</h4>
+						<ul class="checklist">
+							<li>
+								<i class="icon-ok"></i>
+								<div class="checklist-item">
+									<b>Works on practically all prescriptions</b><br/>It is accepted at over 90% of all pharmacies nationwide.
+								</div>
+							</li>	
+							<li>
+								<i class="icon-ok"></i>
+								<div class="checklist-item">							
+									<b>Savings are up to 60%</b><br/>The average savings to date are around 43%. Savings are greater on generics than on brand name drugs.
+								</div>
+							</li>	
+							<li>
+								<i class="icon-ok"></i>
+								<div class="checklist-item">
+									<b>Anyone can use the card</b><br/>No age, income, residency restrictions.
+								</div>
+							</li>
+							<li>
+								<i class="icon-ok"></i>
+								<div class="checklist-item">
+									<b>Use the card right away</b><br/>It is pre-activated, no forms, phone calls needed to register.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<footer class="row-fluid">
@@ -44,7 +109,7 @@
 					<h5>Projects</h5>
 					<a href="340b.html">340B</a><br/>
 					<a href="card.html">Discount Prescription Card</a><br/>
-					<a href="#">Research Projects</a>
+					<a href="research.html">Research Projects</a>
 				</div>
 				<div class="span4">
 					<i class="icon-map-marker"></i>
